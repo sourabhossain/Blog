@@ -1,2 +1,1 @@
 # Blog
-php project
