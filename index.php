@@ -1,73 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Basic Website</title>
-	<meta name="language" content="English">
-	<meta name="description" content="It is a website about education">
-	<meta name="keywords" content="blog,cms blog">
-	<meta name="author" content="Delowar">
-	<link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.css">	
-	<link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="style.css">
-	<script src="js/jquery.js" type="text/javascript"></script>
-	<script src="js/jquery.nivo.slider.js" type="text/javascript"></script>
+<?php 
 
-<script type="text/javascript">
-$(window).load(function() {
-	$('#slider').nivoSlider({
-		effect:'random',
-		slices:10,
-		animSpeed:500,
-		pauseTime:5000,
-		startSlide:0, //Set starting Slide (0 index)
-		directionNav:false,
-		directionNavHide:false, //Only show on hover
-		controlNav:false, //1,2,3...
-		controlNavThumbs:false, //Use thumbnails for Control Nav
-		pauseOnHover:true, //Stop animation while hovering
-		manualAdvance:false, //Force manual transitions
-		captionOpacity:0.8, //Universal caption opacity
-		beforeChange: function(){},
-		afterChange: function(){},
-		slideshowEnd: function(){} //Triggers after all slides have been shown
-	});
-});
-</script>
-</head>
+include("inc/header.php");
 
-<body>
-	<div class="headersection templete clear">
-		<a href="#">
-			<div class="logo">
-				<img src="images/logo.png" alt="Logo"/>
-				<h2>Website Title</h2>
-				<p>Our website description</p>
-			</div>
-		</a>
-		<div class="social clear">
-			<div class="icon clear">
-				<a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-				<a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-				<a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
-				<a href="#" target="_blank"><i class="fa fa-google-plus"></i></a>
-			</div>
-			<div class="searchbtn clear">
-			<form action="" method="post">
-				<input type="text" name="keyword" placeholder="Search keyword..."/>
-				<input type="submit" name="submit" value="Search"/>
-			</form>
-			</div>
-		</div>
-	</div>
-<div class="navsection templete">
-	<ul>
-		<li><a id="active" href="index.html">Home</a></li>
-		<li><a href="about.html">About</a></li>	
-		<li><a href="contact.html">Contact</a></li>
-	</ul>
-</div>
+?>
 
-	
 <div class="slidersection templete clear">
         <div id="slider">
             <a href="#"><img src="images/slideshow/01.jpg" alt="nature 1" title="This is slider one Title or Description" /></a>
@@ -122,38 +58,38 @@ $(window).load(function() {
 						<li><a href="#">Category Two</a></li>
 						<li><a href="#">Category Three</a></li>
 						<li><a href="#">Category Four</a></li>
-						<li><a href="#">Category Five</a></li>						
+						<li><a href="#">Category Five</a></li>
 					</ul>
 			</div>
-			
+
 			<div class="samesidebar clear">
 				<h2>Latest articles</h2>
 					<div class="popular clear">
 						<h3><a href="#">Post title will be go here..</a></h3>
 						<a href="#"><img src="images/post1.jpg" alt="post image"/></a>
-						<p>Sidebar text will be go here.Sidebar text will be go here.Sidebar text will be go here.Sidebar text will be go here.</p>	
+						<p>Sidebar text will be go here.Sidebar text will be go here.Sidebar text will be go here.Sidebar text will be go here.</p>
 					</div>
-					
+
 					<div class="popular clear">
 						<h3><a href="#">Post title will be go here..</a></h3>
 						<a href="#"><img src="images/post1.jpg" alt="post image"/></a>
-						<p>Sidebar text will be go here.Sidebar text will be go here.Sidebar text will be go here.Sidebar text will be go here.</p>	
+						<p>Sidebar text will be go here.Sidebar text will be go here.Sidebar text will be go here.Sidebar text will be go here.</p>
 					</div>
-					
+
 					<div class="popular clear">
 						<h3><a href="#">Post title will be go here..</a></h3>
 						<a href="#"><img src="images/post1.jpg" alt="post image"/></a>
-						<p>Sidebar text will be go here.Sidebar text will be go here.Sidebar text will be go here.Sidebar text will be go here.</p>	
+						<p>Sidebar text will be go here.Sidebar text will be go here.Sidebar text will be go here.Sidebar text will be go here.</p>
 					</div>
-					
+
 					<div class="popular clear">
 						<h3><a href="#">Post title will be go here..</a></h3>
 						<a href="#"><img src="images/post1.jpg" alt="post image"/></a>
-						<p>Sidebar text will be go here.Sidebar text will be go here.Sidebar text will be go here.Sidebar text will be go here.</p>	
+						<p>Sidebar text will be go here.Sidebar text will be go here.Sidebar text will be go here.Sidebar text will be go here.</p>
 					</div>
-	
+
 			</div>
-			
+
 		</div>
 	</div>
 
