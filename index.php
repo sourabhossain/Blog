@@ -17,7 +17,7 @@ $fm = new Format();
 			
 			<?php 
 			
-				$query = "SELECT * FROM tbl_post";
+				$query = "SELECT * FROM tbl_post LIMIT 3";
 				$post = $db->select($query);
 
 				if ($post) {
