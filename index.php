@@ -2,10 +2,12 @@
 
 include("config/config.php");
 include("lib/Database.php");
+include("helpers/format.php");
 include("inc/header.php");
 include("inc/silder.php");
 
 $db = new Database();
+$fm = new Format();
 
 ?>
 	
@@ -25,7 +27,7 @@ $db = new Database();
 		
 			<div class="samepost clear">
 				<h2><a href="post.php?id=<?php echo $result['id']; ?>"><?php echo $result['title']; ?></a></h2>
-				<h4>=<?php echo $result['date']; ?>, By <a href="#">=<?php echo $result['author']; ?></a></h4>
+				<h4>=<?php echo $fm->formatDate($result['date']); ?>, By <a href="#">=<?php echo $result['author']; ?></a></h4>
 				<a href="#"><img src="images/post1.jpg" alt="post image"/></a>
 				=<?php echo $result['body']; ?>
 
