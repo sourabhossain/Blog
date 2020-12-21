@@ -29,7 +29,7 @@ $fm = new Format();
 				<h2><a href="post.php?id=<?php echo $result['id']; ?>"><?php echo $result['title']; ?></a></h2>
 				<h4>=<?php echo $fm->formatDate($result['date']); ?>, By <a href="#">=<?php echo $result['author']; ?></a></h4>
 				<a href="#"><img src="images/post1.jpg" alt="post image"/></a>
-				=<?php echo $result['body']; ?>
+				=<?php echo $fm->textShorten($result['body']); ?>
 
 				<div class="readmore clear">
 				<a href="post.php?id=<?php echo $result['id']; ?>">Read More</a>
